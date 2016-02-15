@@ -65,3 +65,17 @@ return 0;
 
 
 
+
+insertarAnimal(int iEspecie, animal animal){
+
+	int animalesActuales = clinica.especies[iEspecie].num;
+	if(animalesActuales<N-1)
+	{
+		clinica.especies[iEspecie].animales[animalesActuales+1];
+		clinica.especies[iEspecie].num++;
+	}
+	else printf("Error no hay memoria");
+}
+
+
+
